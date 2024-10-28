@@ -26,10 +26,6 @@ As I continue to develop this portfolio, I plan to integrate additional features
 - More detailed case studies of my projects
 - Integration of feedback and suggestions from peers and mentors
 
-## Contribution
-
-If you would like to contribute to this project, please feel free to open an issue or submit a pull request. Your feedback and suggestions are greatly appreciated!
-
 
 Thank you for visiting my portfolio project! I look forward to sharing my progress with you.#
 
