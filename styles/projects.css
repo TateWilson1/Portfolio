@@ -1,0 +1,157 @@
+/* OVERALL */
+body {
+    background-color: #FDFDFD; /* Dark background for the entire page */
+    color: #D2D2D0; /* Light text color for better readability */
+    font-family: Arial, sans-serif; /* General font style */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    margin: 0;
+}
+
+.container {
+    width: calc(100% - 200px); /* Subtract the exact width of the side navigation */
+    margin-left: 200px; /* Add margin to align next to the side navigation */
+    padding: 20px;
+    background: #FDFDFD; /* Light background for the content area */
+    transition: 1s; /* Smooth transition effects */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+.content-row {
+    display: flex;                      /* Use Flexbox for alignment */
+    justify-content: space-between;     /* Space between items */
+    margin-bottom: 20px;                /* Margin below the row */
+}
+
+.content {
+    flex: 0 0 48%;                       /* Allow each content to take up to 48% of the row */
+    margin-right: 2%;                    /* Margin between the two contents */
+    padding: 20px;                       /* Keep the existing padding */
+    box-sizing: border-box;              /* Ensure padding and border are included in the width */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the content area */
+    border-radius: 8px;                  /* Rounded corners */
+    border: 2px solid #F9D401;           /* Yellow border */
+    opacity: 0;                          /* Initially hide the content */
+    transform: translateY(20px);         /* Optional: slightly move it down */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.content:last-child {
+    margin-right: 0;                     /* Remove margin for the last child */
+}
+
+.page-header {
+    background-color: #4A90E2; /* Header background color */
+    color: white; /* Text color */
+    padding: 20px; /* Space around the content */
+    text-align: center; /* Center text */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.page-header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2.5em; /* Size of the main header */
+}
+
+.page-header p {
+    margin: 5px 0 0; /* Margin for the subheading */
+    font-size: 1.2em; /* Size of the subheading */
+}
+
+
+/* ANIMATIONS */
+.content.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to its original position */
+}
+
+h1 {
+    color: #F9D401; /* Bright color for headings */
+    font-size: 2.5em; /* Size for the main heading */
+}
+
+p {
+    line-height: 1.5em; /* Line height for paragraphs for better readability */
+    font-size: 1.1em; /* Font size for paragraphs */
+}
+
+/* Optional: You could also add specific styles for any links or buttons on this page */
+a {
+    color: #F9D401; /* Yellow color for links */
+    text-decoration: none; /* No underline for links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+/* Typewriter effect */
+.typewriter {
+    display: inline-block; /* Keep it inline for positioning */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: blink-caret .75s step-end infinite; /* Cursor blink animation */
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 150px; /* Adjust width for smaller screens */
+    }
+
+    .container {
+        width: calc(100% - 150px); /* Update calculation based on new menu width */
+        margin-left: 150px; /* Align next to the adjusted menu */
+    }
+}
+
+.content-row {
+    margin-top: 20px; /* Creates space between header and content row */
+}
+
+
+/* PROJECT - code inspired and changed from https://codepen.io/knyttneve/pen/YgZbLO */
+.project-image {
+    max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
+    height: auto;    /* Maintains the aspect ratio of the image */
+    max-height: 200px; /* Set a maximum height limit */
+    border-radius: 8px; /* Optional: adds rounded corners to the images */
+}
+
+.project {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for transform and background color */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slightly enlarges the project container on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Lightens the background color on hover */
+}
+
+.project-link {
+    display: block; /* Makes the link cover the entire content area */
+    text-decoration: none; /* Removes the underline from the link */
+    color: inherit; /* Ensures the text color matches the surrounding text */
+    height: 100%; /* Ensures the link takes up the entire height of the project */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

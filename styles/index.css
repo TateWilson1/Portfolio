@@ -1,0 +1,285 @@
+/* OVERALL */
+body {
+    background-color: #FDFDFD; /* Dark background for the entire page */
+    color: #D2D2D0; /* Light text color for better readability */
+    font-family: Arial, sans-serif; /* General font style */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    margin: 0;
+}
+
+.container {
+    width: calc(100% - 200px); /* Subtract the exact width of the side navigation */
+    margin-left: 200px; /* Add margin to align next to the side navigation */
+    padding: 20px;
+    background: #FDFDFD; /* Light background for the content area */
+    transition: 1s; /* Smooth transition effects */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+.content {
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the content area */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #F9D401; /* Yellow border */
+    opacity: 0; /* Initially hide the content */
+    transform: translateY(20px); /* Optional: slightly move it down */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.page-header {
+    background-color: #4A90E2; /* Header background color */
+    color: white; /* Text color */
+    padding: 20px; /* Space around the content */
+    text-align: center; /* Center text */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.page-header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2.5em; /* Size of the main header */
+}
+
+.page-header p {
+    margin: 5px 0 0; /* Margin for the subheading */
+    font-size: 1.2em; /* Size of the subheading */
+}
+
+
+/* ANIMATIONS */
+.content.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to its original position */
+}
+
+h1 {
+    color: #F9D401; /* Bright color for headings */
+    font-size: 2.5em; /* Size for the main heading */
+}
+
+p {
+    line-height: 1.5em; /* Line height for paragraphs for better readability */
+    font-size: 1.1em; /* Font size for paragraphs */
+}
+
+/* Optional: You could also add specific styles for any links or buttons on this page */
+a {
+    color: #F9D401; /* Yellow color for links */
+    text-decoration: none; /* No underline for links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+/* Typewriter effect */
+.typewriter {
+    display: inline-block; /* Keep it inline for positioning */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: blink-caret .75s step-end infinite; /* Cursor blink animation */
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 150px; /* Adjust width for smaller screens */
+    }
+
+    .container {
+        width: calc(100% - 150px); /* Update calculation based on new menu width */
+        margin-left: 150px; /* Align next to the adjusted menu */
+    }
+}
+
+
+/* SKILLS */
+.skills-logos {
+    display: flex; /* Align logos in a row */
+    justify-content: center; /* Center logos */
+    padding-top: 20px; /* Space between paragraph and logos */
+    position: relative;
+}
+
+.floating-logo {
+    width: 60px; /* Set width */
+    height: 60px; /* Set height to be equal for a perfect circle */
+    border-radius: 50%; /* Make the image a circle */
+    object-fit: cover; /* Ensures the image covers the circle area without distortion */
+    animation: float 3s ease-in-out infinite; /* Keep your floating animation */
+    margin: 0 10px; /* Space between logos */
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Starting position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Return to starting position */
+    }
+}
+
+/* To randomly float logos with different timings */
+.floating-logo:nth-child(1) {
+    animation-delay: 0s; /* Start immediately */
+}
+
+.floating-logo:nth-child(2) {
+    animation-delay: 0.5s; /* Delay for a staggered effect */
+}
+
+.floating-logo:nth-child(3) {
+    animation-delay: 1s; /* Delay for a staggered effect */
+}
+
+.floating-logo:nth-child(4) {
+    animation-delay: 1.5s; /* Delay for a staggered effect */
+}
+
+.floating-logo:nth-child(5) {
+    animation-delay: 2s; /* Delay for a staggered effect */
+}
+
+
+/* PROJECT - code inspired and changed from https://codepen.io/knyttneve/pen/YgZbLO */
+.projects-grid {
+    margin: 100px auto; /* Center the grid */
+    width: 70%; /* Set the desired width */
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 10px; /* Spacing between images */
+}
+
+.project-item {
+    position: relative; /* Position for absolute overlay */
+    overflow: hidden; /* Hide overflow */
+    width: 20%; /* Set fixed width for items */
+    height: 300px; /* Set fixed height for items */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.project-item:hover {
+    transform: scale(1.2); /* Scale up on hover */
+    z-index: 1; /* Bring the hovered item to the front */
+}
+
+.projects-grid img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Cover the area */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.project-title {
+    position: absolute; /* Absolute position over the image */
+    bottom: 10px; /* Position from the bottom */
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Adjust center alignment */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 5px 10px; /* Padding for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    transition: opacity 0.5s ease; /* Smooth fade-in */
+    opacity: 0; /* Initially hidden */
+}
+
+.project-item:hover .project-title {
+    opacity: 1; /* Show title on hover */
+}
+
+.explore-button {
+    display: block; /* Center the button */
+    margin: 20px auto; /* Center with auto margins */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #F9D401; /* Button color */
+    color: black; /* Button text color */
+    text-align: center; /* Center the text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Transition effect for button */
+}
+
+.explore-button:hover {
+    background-color: #FFD700; /* Change color on hover */
+}
+
+
+/* CONTACT*/
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack the fields vertically */
+    width: 60%; /* Width of the form */
+    margin: 20px auto; /* Center the form */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the form */
+    padding: 20px; /* Padding for the form */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #F9D401; /* Yellow border */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between fields */
+}
+
+label {
+    color: white; /* Label color */
+    font-size: 16px; /* Label font size */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside the inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size for inputs */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #F9D401; /* Change border color on focus */
+}
+
+.submit-button {
+    padding: 10px 15px; /* Button padding */
+    background-color: #F9D401; /* Button background color */
+    color: black; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Button font size */
+    transition: background-color 0.3s; /* Transition effect for button */
+}
+
+.submit-button:hover {
+    background-color: #FFD700; /* Change color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+

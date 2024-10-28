@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <script src="javascript/script.js" defer></script> <!-- Added defer attribute -->
+    <title>Tate Wilson Portfolio</title>
+</head>
+<body>
+
+    <script>
+        // Check if 'introSeen' is set in session storage
+        if (!sessionStorage.getItem('introSeen')) {
+            // If not, set it and redirect to intro.html
+            sessionStorage.setItem('introSeen', 'true');
+            window.location.href = "intro.html";
+        }
+    </script>
+
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="arrow"></div>
+    </div>
+    <div class="container">
+        <!-- Standout Header -->
+        <header class="page-header">
+            <h1>Tate Wilson</h1>
+            <p class="typewriter">I'm a... <span id="dynamic-text"></span></p>
+        </header>        
+        
+        <div class="content">
+            <h2>About Me</h2>
+            <p>
+                I am a dedicated digital forensics and cybersecurity student at Eastern Kentucky University, with a passion for protecting digital information and systems. As a member of the CCDC team, I thrive in challenging environments, continually seeking to expand my knowledge and skills in the ever-evolving field of cybersecurity.
+            </p>
+        </div>
+        <div class="content">
+            <h2>Skills</h2>
+            <p>
+                As a digital forensics and cybersecurity enthusiast, I bring hands-on expertise with essential tools and platforms. Proficient in both Windows and Linux environments, I can navigate and manage systems with ease. My programming knowledge in Java enhances my analytical and problem-solving skills, while Nmap and Wireshark provide me with powerful network scanning and packet analysis capabilities for proactive and defensive security practices.
+            </p>
+            <div class="skills-logos">
+                <img src="/images/windows.jpg" alt="Windows" class="floating-logo" />
+                <img src="/images/java.png" class="floating-logo" />
+                <img src="/images/Linux.jpg" class="floating-logo" />
+                <img src="/images/NMap.jpg" class="floating-logo" />
+                <img src="/images/Wireshark.PNG" class="floating-logo" />
+            </div>
+        </div>
+        
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="images/passwordManMad.jpg" alt="Password Manager">
+                    <span class="project-title">Password Strength Tester</span>
+                </div>
+                <div class="project-item">
+                    <img src="images/hacker.jpg" alt="Hacker">
+                    <span class="project-title">Website Portfolio Page</span>
+                </div>
+                <div class="project-item">
+                    <img src="images/WindowsVul.jpg" alt="Windows Vulnerability Scanner">
+                    <span class="project-title">Windows 10 Vulnerability Scanner</span>
+                </div>
+                <div class="project-item">
+                    <img src="images/guy.jpg" alt="Guy">
+                    <span class="project-title">Wesbite Portfolio Page</span>
+                </div>
+                <div class="project-item">
+                    <img src="images/computer.jpg" alt="Computer">
+                    <span class="project-title">Added in the future</span>
+                </div>
+            </div>
+            <a href="link_to_your_projects.html" class="explore-button">Click here to explore other projects</a>
+        </div>
+        
+        <div class="content">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+        
+</body>
+</html>
