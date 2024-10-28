@@ -140,6 +140,25 @@ a:hover {
     height: 100%; /* Ensures the link takes up the entire height of the project */
 }
 
+/* Remove underline from links */
+a {
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
+/* Optional: add a transition for smoothness */
+a {
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+a:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+
 
 
 
