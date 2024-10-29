@@ -1,6 +1,6 @@
 /* OVERALL */
 body {
-    background-color: #FDFDFD; /* Dark background for the entire page */
+    background-color: #fdfdfd00; /* Dark background for the entire page */
     color: #D2D2D0; /* Light text color for better readability */
     font-family: Arial, sans-serif; /* General font style */
     overflow-x: hidden; /* Prevent horizontal scroll */
@@ -11,7 +11,7 @@ body {
     width: calc(100% - 200px); /* Subtract the exact width of the side navigation */
     margin-left: 200px; /* Add margin to align next to the side navigation */
     padding: 20px;
-    background: #FDFDFD; /* Light background for the content area */
+    background: #fdfdfd00; /* Light background for the content area */
     transition: 1s; /* Smooth transition effects */
     box-sizing: border-box; /* Include padding and border in width calculations */
 }
