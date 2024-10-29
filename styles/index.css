@@ -273,6 +273,33 @@ textarea:focus {
 }
 
 
+/* Social Links */
+.social-links {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: flex-end; /* Align the icons to the right */
+    gap: 15px; /* Space between icons */
+    list-style-type: none; /* Remove bullets from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.social-links li {
+    margin: 0; /* Remove margin from list items */
+}
+
+.social-links a {
+    font-size: 30px; /* Set the size of the icons */
+    color: #000; /* Change icon color to black (or any desired color) */
+    transition: color 0.3s; /* Add transition for hover effect */
+}
+
+.social-links a:hover {
+    color: #555; /* Change color on hover */
+}
+
+
+
+
 /* Desktop Alert Modal Styles */
 .alert-modal {
     display: none; /* Hidden by default */
