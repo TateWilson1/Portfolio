@@ -1,9 +1,9 @@
 /* OVERALL */
 body {
-    background-color: #fdfdfd00; /* Dark background for the entire page */
-    color: #D2D2D0; /* Light text color for better readability */
-    font-family: Arial, sans-serif; /* General font style */
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    background-color: #1a1a1a; /* Solid dark background for consistency */
+    color: #D2D2D0; /* Light text color for readability */
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
     margin: 0;
 }
 
