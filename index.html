@@ -103,6 +103,27 @@
                 <button type="submit" class="submit-button">Send Message</button>
             </form>
         </div>
+
+        <!-- Desktop Alert Modal -->
+<div id="desktopAlert" class="alert-modal">
+    <div class="alert-content">
+        <p>This website is optimized for desktop. For the best experience, please use a desktop device.</p>
+        <button onclick="closeAlert()">Close</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.innerWidth < 768) { // Detects small screens (e.g., mobile devices)
+            document.getElementById("desktopAlert").style.display = "flex";
+        }
+    });
+
+    function closeAlert() {
+        document.getElementById("desktopAlert").style.display = "none";
+    }
+</script>
+
         
 </body>
 </html>
