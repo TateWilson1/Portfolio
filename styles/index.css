@@ -151,6 +151,12 @@ a:hover {
     animation-delay: 2s; /* Delay for a staggered effect */
 }
 
+.highlight {
+    color: #1E90FF; /* DodgerBlue color for the text */
+    font-weight: bold; /* Optional: make the text bold */
+}
+
+
 
 /* PROJECT - code inspired and changed from https://codepen.io/knyttneve/pen/YgZbLO */
 .projects-grid {
