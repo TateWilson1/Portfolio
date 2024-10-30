@@ -155,7 +155,7 @@ a {
 }
 
 a:hover {
-    transform: scale(1.05); /* Slightly scale up on hover */
+    transform: scale(1.03); /* Slightly scale up on hover */
 }
 
 
