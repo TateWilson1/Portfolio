@@ -125,7 +125,7 @@ a:hover {
 }
 
 .project {
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for transform and background color */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transition for transform and background color */
 }
 
 .project:hover {
