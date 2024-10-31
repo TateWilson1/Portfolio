@@ -3,27 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Tate Wilson's Portfolio</title>
+    <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/contact.css">
+
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="javascript/projects.js" defer></script>
+    <title>Contact Page</title>
 </head>
 <body>
+
     <div class="menu">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="arrow"></div>
     </div>
-
+    
     <div class="container">
-        <section id="contact" class="content">
-            <h1>Contact Me</h1>
-            <form action="#" method="post">
+        <header class="page-header">
+            <h1>Contact Page</h1>
+            <p class="typewriter">I'm a... <span id="dynamic-text"></span></p>
+            <ul class="social-links">
+                <li><a href="https://github.com/TateWilson1" target="_blank"><i class="fab fa-github"></i></a></li> 
+                <li><a href="https://www.linkedin.com/in/tate-wilson-649004320/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>   
+        </header>
+        
+        <div class="highlighted-section" style="animation-delay: 0s;">
+            <h2>Why a Contact Form?</h2>
+            <p>Welcome to my contact page! As a cybersecurity student, I believe using this contact form offers a <span class="highlight">more secure</span> way for us to connect. While sharing my email or phone number would be quicker, the form adds <span class="highlight">privacy</span> and helps me <span class="highlight">manage spam</span>. Feel free to share any questions, project ideas, or feedback—I look forward to hearing from you!</p>
+            
+            <h2>Timeline</h2>
+            <p>  
+              <strong>Oct 23</strong>: Started development, built basic structure.<br>
+              <strong>Oct 24-26</strong>: Implemented core features and UI; tested and debugged.<br>
+              <strong>Oct 27</strong>: Released on GitHub.<br>
+              <strong>Ongoing</strong>: Researching to add updates.
+            </p>
+        </div>
+
+        <div class="highlighted-section" style="animation-delay: 0s;">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out with any questions, feedback, or collaboration ideas.</p>
+
+            <form action="https://formspree.io/f/myspecialendpoint" method="POST" class="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -31,11 +60,14 @@
                 <input type="email" id="email" name="email" required>
                 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" rows="5" required></textarea>
                 
                 <button type="submit">Send Message</button>
             </form>
-        </section>
+        </div>
     </div>
+        
+    
+
 </body>
 </html>

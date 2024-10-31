@@ -1,0 +1,200 @@
+/* OVERALL */
+body {
+    background-color: #1a1a1a; /* Solid dark background for consistency */
+    color: #D2D2D0; /* Light text color for readability */
+    font-family: 'Arial', sans-serif; /* Ensure Arial is the default font */
+    overflow-x: hidden;
+    margin: 0;
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+.container {
+    width: calc(100% - 200px); /* Subtract the exact width of the side navigation */
+    margin-left: 200px; /* Add margin to align next to the side navigation */
+    padding: 20px;
+    background: #fdfdfd00; /* Light background for the content area */
+    transition: 1s; /* Smooth transition effects */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+.page-header {
+    background-color: #4A90E2; /* Header background color */
+    color: white; /* Text color */
+    padding: 20px; /* Space around the content */
+    text-align: center; /* Center text */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 30px; /* Space below header */
+}
+
+.highlighted-section {
+    border: 1px solid #F9D401; /* Yellow border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+    padding: 20px; /* Space inside the section */
+    margin-bottom: 30px; /* Space below the section */
+    animation: slide-in 0.5s ease forwards; /* Slide in animation for the section */
+    opacity: 0; /* Start invisible */
+    animation-fill-mode: forwards; /* Keep the final state */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+
+/* Blog-like Intro Section */
+.intro {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for intro */
+    padding: 15px; /* Space inside the intro section */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below intro section */
+}
+
+/* Social Links */
+.social-links {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: flex-end; /* Align the icons to the right */
+    gap: 15px; /* Space between icons */
+    list-style-type: none; /* Remove bullets from the list */
+    padding: 0; /* Remove default padding */
+    margin: 20px 0 0; /* Add margin above social links */
+}
+
+/* Typewriter effect */
+.typewriter {
+    display: inline-block; /* Keep it inline for positioning */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: blink-caret .75s step-end infinite; /* Cursor blink animation */
+}
+
+.intro {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+    color: #b3b3b3;
+    text-align: center;
+    padding: 10px;
+    animation: fadeIn 1s ease;
+}
+
+.highlight {
+    color: #1E90FF; /* DodgerBlue color for the text */
+    font-weight: bold; /* Optional: make the text bold */
+}
+
+/* Social Links */
+.social-links {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: flex-end; /* Align the icons to the right */
+    gap: 15px; /* Space between icons */
+    list-style-type: none; /* Remove bullets from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.social-links li {
+    margin: 0; /* Remove margin from list items */
+}
+
+.social-links a {
+    font-size: 30px; /* Set the size of the icons */
+    color: #000; /* Change icon color to black (or any desired color) */
+    transition: color 0.3s; /* Add transition for hover effect */
+}
+
+.social-links a:hover {
+    color: #555; /* Change color on hover */
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack the fields vertically */
+    width: 60%; /* Width of the form */
+    margin: 20px auto; /* Center the form */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the form */
+    padding: 20px; /* Padding for the form */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #F9D401; /* Yellow border */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between fields */
+}
+
+label {
+    color: white; /* Label color */
+    font-size: 16px; /* Label font size */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside the inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size for inputs */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #F9D401; /* Change border color on focus */
+}
+
+.submit-button {
+    padding: 10px 15px; /* Button padding */
+    background-color: #F9D401; /* Button background color */
+    color: black; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Button font size */
+    transition: background-color 0.3s; /* Transition effect for button */
+}
+
+.submit-button:hover {
+    background-color: #FFD700; /* Change color on hover */
+}
+
+
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .menu {
+        width: 150px; /* Adjust width for smaller screens */
+    }
+
+    .container {
+        width: calc(100% - 150px); /* Update calculation based on new menu width */
+        margin-left: 150px; /* Align next to the adjusted menu */
+    }
+}
+
+/* Animation for sliding in sections */
+@keyframes slide-in {
+    from {
+        transform: translateY(20px); /* Start slightly below */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* End fully visible */
+    }
+}
+
+
+
