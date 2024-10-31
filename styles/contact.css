@@ -29,7 +29,7 @@ body {
 .highlighted-section {
     border: 1px solid #F9D401; /* Yellow border */
     border-radius: 8px; /* Rounded corners */
-    background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+    background-color: black; /* Light background for contrast */
     padding: 20px; /* Space inside the section */
     margin-bottom: 30px; /* Space below the section */
     animation: slide-in 0.5s ease forwards; /* Slide in animation for the section */

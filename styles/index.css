@@ -18,6 +18,7 @@ body {
 
 .content {
     padding: 20px; /* Adjust padding as needed */
+    margin: 20px 0;
     box-sizing: border-box; /* Ensures padding and border are included in the width */
     background-color: rgba(0, 0, 0, 0.8); /* Dark background for the content area */
     border-radius: 8px; /* Rounded corners */
@@ -344,16 +345,3 @@ textarea:focus {
     cursor: pointer;
     font-size: 14px; /* Adjusted button text size */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
