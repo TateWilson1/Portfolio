@@ -27,5 +27,5 @@ As I continue to develop this portfolio, I plan to integrate additional features
 - Integration of feedback and suggestions from peers and mentors
 
 
-Thank you for visiting my portfolio project! I look forward to sharing my progress with you.#
+Thank you for visiting my portfolio project! I look forward to sharing my progress with you.
 
