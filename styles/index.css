@@ -364,3 +364,16 @@ textarea:focus {
     cursor: pointer;
     font-size: 14px; /* Adjusted button text size */
 }
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide the menu on screens smaller than 768px */
+    }
+
+    /* Adjust the container width and margin to account for the hidden menu */
+    .container {
+        width: 100%; /* Take up full width */
+        margin-left: 0; /* Remove left margin */
+    }
+}

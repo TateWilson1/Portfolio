@@ -80,3 +80,11 @@ nav a:hover {
         opacity: 0; 
     }
 }
+
+/* Hide the menu on mobile screens */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Completely remove the menu from view */
+    }
+}
+
