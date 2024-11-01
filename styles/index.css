@@ -279,6 +279,25 @@ textarea:focus {
     background-color: #FFD700; /* Change color on hover */
 }
 
+.contact-explanation {
+    margin-top: 20px; /* Adjust spacing as needed */
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F9D401;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black; /* Button text color */
+}
+
+.button:hover {
+    background-color: #F9D401;
+}
+
 
 /* Social Links */
 .social-links {
