@@ -41,6 +41,11 @@ body {
     justify-content: center; /* Center items horizontally */
 }
 
+.highlight {
+    color: #1E90FF; /* DodgerBlue color for the text */
+    font-weight: bold; /* Optional: make the text bold */
+}
+
 .video-container {
     position: relative; /* Position relative for the absolute child */
     width: 100%; /* Full width of the container */
