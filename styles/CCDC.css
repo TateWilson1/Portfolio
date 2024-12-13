@@ -28,6 +28,29 @@ body {
     transition: opacity 0.5s ease, transform 0.5s ease; 
 }
 
+.content p {
+    margin-bottom: 20px;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+.content li {
+    margin-bottom: 10px; 
+    line-height: 1.6; 
+}
+
+.skill-image {
+    width: 100%; 
+    max-width: 500px; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
 .page-header {
     background-color: #4A90E2; 
     color: white; 
@@ -45,7 +68,6 @@ body {
     margin: 5px 0 0; 
     font-size: 1.2em;
 }
-
 
 /* ANIMATIONS */
 .content.visible {
@@ -98,64 +120,6 @@ a:hover {
         margin-left: 150px;
     }
 }
-
-
-/* SKILLS */
-.skills-logos {
-    display: flex; 
-    justify-content: center; 
-    padding-top: 20px; 
-    position: relative;
-}
-
-.floating-logo {
-    width: 60px; 
-    height: 60px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    animation: float 3s ease-in-out infinite; 
-    margin: 0 10px; 
-}
-
-
-@keyframes float {
-    0% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-10px); 
-    }
-    100% {
-        transform: translateY(0); 
-    }
-}
-
-/* To randomly float logos with different timings */
-.floating-logo:nth-child(1) {
-    animation-delay: 0s; 
-}
-
-.floating-logo:nth-child(2) {
-    animation-delay: 0.5s; 
-}
-
-.floating-logo:nth-child(3) {
-    animation-delay: 1s; 
-}
-
-.floating-logo:nth-child(4) {
-    animation-delay: 1.5s; 
-}
-
-.floating-logo:nth-child(5) {
-    animation-delay: 2s; 
-}
-
-.highlight {
-    color: #1E90FF; 
-    font-weight: bold; 
-}
-
 
 
 /* PROJECT - code inspired and changed from https://codepen.io/knyttneve/pen/YgZbLO */
@@ -221,80 +185,6 @@ a:hover {
 
 .explore-button:hover {
     background-color: #FFD700; 
-}
-
-
-/* CONTACT*/
-.contact-form {
-    display: flex;
-    flex-direction: column; 
-    width: 60%; 
-    margin: 20px auto; 
-    background-color: rgba(0, 0, 0, 0.8); 
-    padding: 20px; 
-    border-radius: 8px; 
-    border: 2px solid #F9D401; 
-}
-
-.form-group {
-    margin-bottom: 15px; 
-}
-
-label {
-    color: white; 
-    font-size: 16px; 
-    margin-bottom: 5px; 
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%; 
-    padding: 10px; 
-    border: 1px solid #ccc;
-    border-radius: 4px; 
-    font-size: 14px; 
-    box-sizing: border-box; 
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-color: #F9D401; 
-}
-
-.submit-button {
-    padding: 10px 15px; 
-    background-color: #F9D401; 
-    color: black; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    font-size: 16px; 
-    transition: background-color 0.3s; 
-}
-
-.submit-button:hover {
-    background-color: #FFD700; 
-}
-
-.contact-explanation {
-    margin-top: 20px; 
-    text-align: center;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #F9D401;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    color: black; 
-}
-
-.button:hover {
-    background-color: #F9D401;
 }
 
 
